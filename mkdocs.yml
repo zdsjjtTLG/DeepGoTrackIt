@@ -1,22 +1,8 @@
 site_name: DeepGoTrackIt
 site_url: https://mydomain.org/deepgotrackit
 theme:
-  name: material
-  language: en
+  name: mkdocs
 
-  features:
-    - navigation.instant
-
-  palette:
-
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  nav:
+    - Home: index.md
+    - About: about.md
