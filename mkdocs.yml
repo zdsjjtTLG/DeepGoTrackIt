@@ -1,7 +1,7 @@
 site_name: DeepGoTrackIt
 site_url: https://mydomain.org/deepgotrackit
 theme:
-  name: mkdocs
+  name: material
 
   nav:
     - Home: index.md
