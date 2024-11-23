@@ -2,7 +2,64 @@ site_name: DeepGoTrackIt
 site_url: https://mydomain.org/deepgotrackit
 theme:
   name: material
+  icon:
+    annotation: material/arrow-right-circle
+
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
 
   nav:
     - Home: index.md
-    - About: about.md
+    - About: user_manual\about.md
+    - not123: not.md
+    - format: format.md
+    - usage: usage.md
+
+plugins:
+  - search
+  - mkdocstrings
+
+markdown_extensions:
+  - def_list
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+extra:
+  version:
+    provider: mike
