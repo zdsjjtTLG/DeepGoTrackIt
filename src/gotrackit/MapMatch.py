@@ -37,3 +37,18 @@ class SpreadPortfolio:
             profit(float): profit or loss of the portfolio at the end.
             profit_yield(float): profit / bond_long._face_amount * 365 / (end_date - start_date)
         """
+
+
+
+def test_no_kkk(x:int=12, y:float=0.3) -> float:
+    """a simple test
+
+
+    Args:
+        x: lllo
+        y: lop1
+
+    Returns:
+        kl val, example... 63.66
+    """
+    pass

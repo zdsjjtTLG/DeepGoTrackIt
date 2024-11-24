@@ -3,8 +3,19 @@ site_url: https://mydomain.org/deepgotrackit
 
 theme:
   name: material
+
+#  logo: assets/gotrackit-logo.png
   icon:
     annotation: material/arrow-right-circle
+
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
 
   palette:
 
@@ -23,10 +34,14 @@ theme:
 
   nav:
     - Home: index.md
-    - About: user_manual\about.md
-    - not123: not.md
-    - format: format.md
-    - usage: usage.md
+    - gs:
+      - GettingStarted/GettingStarted.md
+    - ug:
+      - UserGuide/Downloads.md
+    - jk:
+      - not: API/not.md
+      - about: API/about.md
+
 
 plugins:
   - search

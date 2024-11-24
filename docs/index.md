@@ -1,6 +1,7 @@
-# Welcome to MkDocs
+# Welcome to GoTrackIt !
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+GoTrackIt 是一个基于隐马尔可夫模型实现的地图匹配包，通过概率图建模的方式将车辆的GPS轨迹数据匹配到道路路网，获取车辆的标准化时空轨迹， 可以有效支撑出行导航、交通监测、交通治理、碳排核算、交通建模等方向.
+
 
 ## Commands123
 
@@ -19,4 +20,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        ...       # Other markdown pages，images and other files.
