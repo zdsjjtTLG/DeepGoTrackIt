@@ -3,6 +3,8 @@ site_url: https://mydomain.org/deepgotrackit
 
 theme:
   name: material
+  font:
+    text: Roboto
 
 #  logo: assets/gotrackit-logo.png
   icon:
@@ -10,12 +12,17 @@ theme:
 
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.sections
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.expand
     - navigation.top
     - navigation.indexes
+    - navigation.prune
+#    - toc.integrate
 
   palette:
 
@@ -31,16 +38,22 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-
-  nav:
-    - Home: index.md
-    - gs:
-      - GettingStarted/GettingStarted.md
-    - ug:
-      - UserGuide/Downloads.md
-    - jk:
-      - not: API/not.md
-      - about: API/about.md
+nav:
+  - HomePage: index.md
+  - GettingStarted: license.md
+  - UserGuide:
+      - 如何下载: UserGuide/如何下载.md
+      - 数据要求: UserGuide/数据要求.md
+      - 路网生产与优化: UserGuide/路网生产与优化.md
+      - 轨迹生产: UserGuide/轨迹生产.md
+      - 轨迹处理: UserGuide/轨迹处理.md
+      - 路径匹配: UserGuide/路径匹配.md
+  - ExampleGallery:
+      - 轨迹匹配后生成仿真: ExampleGallery/轨迹匹配后生成仿真.md
+  - SourceCode:
+      - SourceCode: SourceCode/SpreadPortfolio.md
+  - 样式参考:
+      - 样式: format.md
 
 
 plugins:
