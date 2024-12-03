@@ -135,3 +135,5 @@ extra_css:
 extra:
   version:
     provider: mike
+
+copyright: Copyright &copy; 2024 Kai Tang

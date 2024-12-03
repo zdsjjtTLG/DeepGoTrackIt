@@ -2,6 +2,10 @@
 
 GoTrackIt是一个基于改进隐马尔可夫模型实现的**全流程地图匹配**pyhon包， 通过概率图建模的方式将车辆的GPS轨迹数据匹配到道路路网， 获取车辆的标准化时空轨迹， 可以有效支撑出行导航、交通监测、交通治理、碳排核算、交通建模等方向。
 
+!!! note 
+    
+    这个项目正处在频繁的升级迭代期， 当前版本v0.3.14， 请用户及时更新.
+
 <figure markdown="span">
   ![Image title](../_static/images/MapMatch.PNG)
   <figcaption>地图匹配(路径匹配)</figcaption>
@@ -11,11 +15,6 @@ GoTrackIt是一个基于改进隐马尔可夫模型实现的**全流程地图匹
   ![Image title](../_static/images/application.PNG)
   <figcaption>路径匹配的应用场景</figcaption>
 </figure>
-
-
-!!! note 
-    
-    这个项目正处在频繁的升级迭代期， 当前版本v0.3.14， 请用户及时更新.
 
 
 ## GoTrackIt功能特点
